@@ -1,0 +1,46 @@
+@import "../../scss/utilities/variables.scss";
+@import "../../scss/utilities/mixin.scss";
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $colorDos;
+    height: 100%;
+    text-align: center;
+    padding: 1rem;
+    .menuNavbar {
+        @include centrado;
+        text-decoration: none;
+        color: $colorCuatro;
+        font-size: 12px;
+        .logo {
+            @include centrado;
+            background-color: $colorTres;
+            height: 5rem;
+            width: 5rem;
+            border-radius: 100px;
+            font-size: 30px;
+        }
+    }
+    .menuNavbar:hover {
+        transform: scale(1.1);
+        .logo {
+            background-color: $colorSiete;
+        }
+    }
+}
+
+@media (max-width: 520px) {
+    .navbar {
+        .menuNavbar {
+            .logo {
+                height: 3rem;
+                width: 3rem;
+                border-radius: 100px;
+                font-size: 15px;
+            }
+        }
+    }
+}

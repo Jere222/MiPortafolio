@@ -1,0 +1,46 @@
+@import "../../scss/utilities/variables.scss";
+@import "../../scss/utilities/mixin.scss";
+
+.divPerfil {
+    @include centrado;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    gap: 3rem;
+    color: $colorCinco;
+    text-align: center;
+    gap: 35px;
+
+    img {
+        height: 10rem;
+        width: 10rem;
+        border-radius: 100px;
+    }
+
+    .redes {
+        display: flex;
+        gap: 20px;
+
+        a {
+            font-size: 3rem;
+            text-decoration: none;
+            color: $colorCinco;
+        }
+    }
+
+}
+
+
+@media (max-width: 520px) {
+    .divPerfil {
+        font-size: 10px;
+        .redes {
+            display: flex;
+            gap: 20px;
+    
+            a {
+                font-size: 2rem;
+            }
+        }
+    }
+}

@@ -1,0 +1,30 @@
+@import "../../scss/utilities/variables.scss";
+@import "../../scss/utilities/mixin.scss";
+
+.divPerfil {
+    @include centrado;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    gap: 3rem;
+
+    img {
+        height: 10rem;
+        width: 10rem;
+        border-radius: 100px;
+    }
+
+    h4 {
+        color: $colorCinco;
+        width: 80%;
+        text-align: center;
+    }
+}
+
+@media (max-width: 520px) {
+    .divPerfil {
+        h4 {
+            font-size: 12px;
+        }
+    }
+}

@@ -1,0 +1,13 @@
+@mixin centrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin card {
+    background-color: $colorSeis;
+    color: $colorCinco;
+    width: 11rem;
+    height: 11rem;
+    border-radius: 20px;
+}

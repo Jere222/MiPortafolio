@@ -1,0 +1,111 @@
+@import "../../scss/utilities/variables.scss";
+@import "../../scss/utilities/mixin.scss";
+
+.divCard {
+    @include card;
+    text-decoration: none;
+    img {
+        width: 11rem;
+        height: 8rem;
+        border-radius: 10px 10px 0 0;
+    }
+    h4 {
+        margin-left: 15px;
+    }
+    .divCardHover {
+        display: none;
+    }
+}
+
+
+@media (min-width: 1100px) {
+    .divCard:hover {
+        .divCardHover {
+            background-color: $colorSeis;
+            color: $colorCinco;
+            width: 20rem;
+            height: 20rem;
+            border-radius: 20px;
+            display: block;
+            position: relative;
+            bottom: 13rem;
+            right: 5rem;
+            z-index: 1;
+            .mainPart {
+                display: flex;
+                gap: 20px;
+                background-color: rgb(161, 191, 171);
+                border-radius: 10px 10px 0 0;
+                img{
+                    border-radius: 10px 0 0 0;
+                }
+                div {
+                    padding-top: 20px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                }
+                h4 {
+                    margin: 0;
+                }
+            }
+            p{
+                padding: 1rem;
+                overflow-y: scroll;
+                height: 11rem;
+            }
+        }
+    }
+    
+}
+
+@media (max-width: 1100px) {
+    .divCard {
+        img {
+            display: none;
+        }
+        h4 {
+            display: none;
+        }
+        .divCardHover {
+            @include card;
+            display: block;
+            .mainPart {
+                display: flex;
+                gap: 20px;
+                background-color: rgb(161, 191, 171);
+                border-radius: 10px 10px 0 0;
+                height: 5rem;
+                overflow: hidden;
+                img{
+                    border-radius: 10px 0 0 0;
+                    display: block;
+                    height: 5rem;
+                    width: 6rem;
+                }
+                div {
+                    padding-top: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 3px;
+                    h4 {
+                        display: block;
+                        margin: 0;
+                        font-size: 10px;
+                    }
+                    h5{
+                        font-size: 8px;
+                    }
+                }
+                
+            }
+            p{
+                padding: 1rem;
+                overflow-y: scroll;
+                height: 5rem;
+            }
+        }
+    }
+    
+    
+}
