@@ -17,7 +17,7 @@ const Navbar = () => {
         <NavLink to={"/educacion"} className={styles.menuNavbar}> 
             <div>
                 <div className={styles.logo}><GiBlackBook /></div>
-                <p>Educacion</p>
+                <p>Educación</p>
             </div> 
         </NavLink>
         <NavLink to={"/proyectos"} className={styles.menuNavbar}>   

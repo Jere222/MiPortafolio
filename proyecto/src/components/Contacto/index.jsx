@@ -7,7 +7,7 @@ const index = () => {
     <div>
         <div className={styles.divPerfil}>
             <h2>Email: infojbdesarrolloweb@gmail.com</h2>
-            <h2>Numero de contacto: +543471623031</h2>
+            <h2>Número de contacto: +543471623031</h2>
             <h2>Mis redes:</h2>
             <div className={styles.redes}>
               <Link to="https://www.instagram.com/jereebracamonte/" target="_blank"><BsInstagram /></Link>
